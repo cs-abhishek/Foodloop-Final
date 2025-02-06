@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Donations - FoodLoop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+    <!-- Page Container -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Manage Donations</h2>
+
+        <!-- Donations Table -->
+        <div class="card">
+            <div class="card-header">
+                <h5>Pending Donations</h5>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Donation ID</th>
+                            <th>Donor Name</th>
+                            <th>Food Type</th>
+                            <th>Quantity</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Example Data - To be dynamically generated -->
+                        <tr>
+                            <td>#201</td>
+                            <td>John Doe</td>
+                            <td>Rice</td>
+                            <td>50 kg</td>
+                            <td>
+                                <button class="btn btn-success btn-sm me-2" onclick="approveDonation(201)">Approve</button>
+                                <button class="btn btn-danger btn-sm" onclick="rejectDonation(201)">Reject</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#202</td>
+                            <td>Jane Smith</td>
+                            <td>Vegetables</td>
+                            <td>30 kg</td>
+                            <td>
+                                <button class="btn btn-success btn-sm me-2" onclick="approveDonation(202)">Approve</button>
+                                <button class="btn btn-danger btn-sm" onclick="rejectDonation(202)">Reject</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        /**
+         * Approve Donation
+         * Simulates approval of a donation.
+         * @param {number} donationId - The ID of the donation to approve.
+         */
+        function approveDonation(donationId) {
+            if (confirm("Are you sure you want to approve this donation?")) {
+                alert(`Donation ID ${donationId} approved successfully!`);
+                // Logic for approving the donation goes here
+            }
+        }
+
+        /**
+         * Reject Donation
+         * Simulates rejection of a donation.
+         * @param {number} donationId - The ID of the donation to reject.
+         */
+        function rejectDonation(donationId) {
+            if (confirm("Are you sure you want to reject this donation?")) {
+                alert(`Donation ID ${donationId} rejected successfully.`);
+                // Logic for rejecting the donation goes here
+            }
+        }
+    </script>
+
+</body>
+
+</html>

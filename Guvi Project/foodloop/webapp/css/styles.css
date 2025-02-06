@@ -1,0 +1,116 @@
+/* General body style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa; /* Light background color */
+    color: #333; /* Dark text color for readability */
+}
+
+/* Header styles */
+header {
+    background-color: #28a745; /* Green header */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    margin-bottom: 30px;
+}
+
+.navbar-nav .nav-link {
+    color: #28a745 !important;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff !important;
+    background-color: #28a745;
+}
+
+/* Card Styles for User Info */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #28a745;
+    color: white;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Login form custom styles */
+.login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-form .form-group {
+    margin-bottom: 15px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+}
+
+.login-form input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Custom button styles */
+.btn-custom {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-custom:hover {
+    background-color: #218838;
+}
+
+/* Footer styles */
+footer {
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Style for responsive design */
+@media (max-width: 768px) {
+    .login-form {
+        width: 100%;
+        margin: 20px;
+    }
+}
